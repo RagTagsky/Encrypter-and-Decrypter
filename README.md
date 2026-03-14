@@ -1,10 +1,10 @@
-# 🐚 CipherShell
+# 🔐 Encrypter & Decrypter
 
-![CipherShell UI](https://github.com/RagTagsky/Encrypter-and-Decrypter/raw/main/preview.png)
+![Project UI](https://github.com/RagTagsky/Encrypter-and-Decrypter/raw/main/preview.png)
 
 ## 🇷🇺 Русский язык
 
-**CipherShell** — это современное высокозащищенное приложение для «упаковки» ваших файлов в зашифрованные контейнеры. Забудьте про сложные ключи в файлах: теперь ваша безопасность строится на мощном пароле и передовых криптографических стандартах.
+**Encrypter & Decrypter** — это современное высокозащищенное приложение для «упаковки» ваших файлов в зашифрованные контейнеры. Забудьте про сложные ключи в файлах: теперь ваша безопасность строится на мощном пароле и передовых криптографических стандартах.
 
 ### ✨ Ключевые особенности
 *   **Argon2id**: Современное хеширование паролей, устойчивое к взлому на GPU.
@@ -32,7 +32,7 @@
 
 ## 🇺🇸 English Language
 
-**CipherShell** is a modern, high-security utility designed to "pack" your files into encrypted containers. No more clunky key files: your security is now built on robust passwords and state-of-the-art cryptographic standards.
+**Encrypter & Decrypter** is a modern, high-security utility designed to "pack" your files into encrypted containers. No more clunky key files: your security is now built on robust passwords and state-of-the-art cryptographic standards.
 
 ### ✨ Key Features
 *   **Argon2id**: Modern password hashing resistant to GPU brute-force attacks.

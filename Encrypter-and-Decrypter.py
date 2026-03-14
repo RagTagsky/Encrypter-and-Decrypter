@@ -215,7 +215,7 @@ class App(CTkEngine):
     def __init__(self):
         super().__init__()
         
-        self.title("CipherShell")
+        self.title("Encrypter & Decrypter")
         self.geometry("600x480")
         self.minsize(550, 480)
         
