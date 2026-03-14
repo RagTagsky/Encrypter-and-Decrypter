@@ -1,130 +1,60 @@
-# Encrypter & Decrypter
+# 🐚 CipherShell
 
-# Russian language \ Русский язык
+![CipherShell UI](https://github.com/RagTagsky/Encrypter-and-Decrypter/raw/main/preview.png)
 
-Простое кроссплатформенное графическое приложение для шифрования и расшифровки файлов с использованием алгоритма AES-256 в режиме CBC и проверкой целостности через HMAC-SHA256. Написано на Python с использованием PyQt5 и библиотеки cryptography.
+## 🇷🇺 Русский язык
 
-## Возможности
-- Шифрование с помощью AES-256 в режиме CBC
-- Проверка целостности с использованием HMAC-SHA256
-- Простой и интуитивно понятный интерфейс на PyQt5
-- Отдельные вкладки для шифрования и расшифровки
-- Генерация и экспорт ключа
-- Обработка ошибок с понятными сообщениями для пользователя
+**CipherShell** — это современное высокозащищенное приложение для «упаковки» ваших файлов в зашифрованные контейнеры. Забудьте про сложные ключи в файлах: теперь ваша безопасность строится на мощном пароле и передовых криптографических стандартах.
 
-## Интерфейс
-Светлая вкладочная тема с удобным вводом путей и кнопками для выбора файлов.
+### ✨ Ключевые особенности
+*   **Argon2id**: Современное хеширование паролей, устойчивое к взлому на GPU.
+*   **AES-GCM (256-bit)**: Проверенный временем алгоритм шифрования с автоматической проверкой целостности (AEAD).
+*   **Режим архиватора**: Программа работает по принципу "Pack/Unpack" — исходный файл заменяется на защищённую версию и наоборот.
+*   **Glassmorphism UI**: Эстетичный интерфейс на `CustomTkinter` с поддержкой системных тем (светлая/темная) и плавными анимациями.
+*   **Smart Drag-and-Drop**: Просто перетащите любой файл в окно, и программа сама поймет, нужно его зашифровать или расшифровать.
+*   **Zero-Knowledge**: Ваши пароли никогда не сохраняются и не передаются.
 
-## Требования
-- Python 3.8+
-- PyQt5
-- cryptography
+### 🛠 Требования
+*   Python 3.10+
+*   Библиотеки: `customtkinter`, `cryptography`, `argon2-cffi`, `pillow`, `tkinterdnd2`
 
-## Установка
+### 🚀 Быстрый старт
+1. Установите зависимости:
+   ```powershell
+   pip install customtkinter cryptography argon2-cffi pillow tkinterdnd2-universal
+   ```
+2. Запустите приложение:
+   ```powershell
+   python Encrypter-and-Decrypter.py
+   ```
 
-1. Клонируй репозиторий:
+---
 
-    git clone https://github.com/RagTagsky/Encrypter-and-Decrypter.git
-    cd Encrypter-and-Decrypter
+## 🇺🇸 English Language
 
-2. Установи зависимости:
+**CipherShell** is a modern, high-security utility designed to "pack" your files into encrypted containers. No more clunky key files: your security is now built on robust passwords and state-of-the-art cryptographic standards.
 
-    pip install -r requirements.txt
+### ✨ Key Features
+*   **Argon2id**: Modern password hashing resistant to GPU brute-force attacks.
+*   **AES-GCM (256-bit)**: Industry-standard authenticated encryption (AEAD) ensuring both privacy and integrity.
+*   **Archiver Workflow**: The app follows a "Pack/Unpack" logic — replacing the source file with its protected version and vice versa.
+*   **Glassmorphism UI**: Beautiful `CustomTkinter` interface with native theme support (Light/Dark) and smooth micro-animations.
+*   **Smart Drag-and-Drop**: Toss any file into the window, and let the smart routing decide whether to pack or unpack it.
+*   **Zero-Knowledge**: Your passwords are never stored or transmitted anywhere.
 
-3. Запусти приложение:
+### 🛠 Requirements
+*   Python 3.10+
+*   Dependencies: `customtkinter`, `cryptography`, `argon2-cffi`, `pillow`, `tkinterdnd2`
 
-python Encrypter-and-Decrypter.py
+### 🚀 Quick Start
+1. Install dependencies:
+   ```powershell
+   pip install customtkinter cryptography argon2-cffi pillow tkinterdnd2-universal
+   ```
+2. Run the application:
+   ```powershell
+   python Encrypter-and-Decrypter.py
+   ```
 
-## Использование
-- Шифрование файла:
-    Выбери файл для шифрования.
-    Укажи имя выходного файла.
-
-    Нажми «Encrypt File».
-
-    Сохрани сгенерированный файл с ключом (.bin) - он понадобится для расшифровки
-
-- Расшифровка файла:
-
-    Выбери зашифрованный файл.
-    Укажи путь для сохранения расшифрованного файла.
-
-    Выбери ранее сохранённый ключ.
-
-    Нажми «Decrypt File».
-
-- Если ключ неверен или файл был изменён, проверка HMAC завершится с ошибкой.
-
-## Формат выходного файла
-Формат .enc файла:
-
-[16 байт IV] + [зашифрованные данные] + [32 байта HMAC-SHA256]
-
-## Дисклеймер
-Этот проект создан в образовательных целях. Не предназначен для использования в системах, требующих высокой степени безопасности.
-
-
-# English language \ Английский язык
-
-A simple, cross-platform GUI application for encrypting and decrypting files using AES-256 in CBC mode with HMAC-SHA256 verification. Built with Python, PyQt5, and "cryptography".
-
-## Features
-
-- AES-256 encryption in CBC mode
-- HMAC-SHA256 integrity verification
-- Simple and intuitive PyQt5 interface
-- Separate tabs for encryption and decryption
-- Key generation and export
-- Error handling with user-friendly messages
-
-## Interface Preview
-
-Light-themed tabbed interface with drag-and-drop paths and buttons to browse files. 
-
-## Requirements
-
-- Python 3.8+
-- PyQt5
-- cryptography
-
-## Installation
-
-1. Clone the repository:
-
-   git clone https://github.com/RagTagsky/Encrypter-and-Decrypter.git
-   cd Encrypter-and-Decrypter
-
-2. Install dependencies:
-
-    pip install -r requirements.txt
-
-3. Run the app:
-
-    python Encrypter-and-Decrypter.py
-
-## Usage
-
-- Encrypt a file:
-    Select the file you want to encrypt.
-    Specify the output file name.
-
-    Click "Encrypt File".
-
-    Save the generated key (.bin) file - you will need it to decrypt!
-
-- Decrypt a file:
-    Select the encrypted file.
-    Provide the output file path.
-
-    Select the key file you saved earlier.
-
-    Click "Decrypt File".
-
-- If the key is incorrect or the file has been tampered with, HMAC verification will fail.
-
-## Output File Format
-The output .enc file structure:
-    - [16 bytes IV] + [ciphertext] + [32 bytes HMAC-SHA256]
-
-## Disclaimer
-This project is intended for educational purposes. Do not use it for serious production-level security.
+## 📜 Disclaimer
+This tool uses strong military-grade encryption. If you lose your password, **it is impossible to recover your data**. Use a password manager to keep your secrets safe.
