@@ -1,2 +1,5 @@
-PyQt5>=5.15.0
+customtkinter>=5.2.0
+tkinterdnd2>=0.3.0
+darkdetect>=0.8.0
+Pillow>=10.0.0
 cryptography>=41.0.0
